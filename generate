@@ -4,12 +4,12 @@ rm -f cv-en.html cv-fr.html
 cp cv.en.html cv-en.html
 cp cv.fr.html cv-fr.html
 
-#rm -f cv-edu-en.html cv-edu-fr.html
+rm -f cv-edu-en.html cv-edu-fr.html cv-edu.en.html cv-edu.fr.html
 #cp cv-edu.en.html cv-edu-en.html
 #cp cv-edu.fr.html cv-edu-fr.html
 
-cp cv.en.html cv-edu.en.html
-cp cv.fr.html cv-edu.fr.html 
+#cp cv.en.html cv-edu.en.html
+#cp cv.fr.html cv-edu.fr.html 
 
-cp cv.en.html cv-edu-en.html
-cp cv.fr.html cv-edu-fr.html
+#cp cv.en.html cv-edu-en.html
+#cp cv.fr.html cv-edu-fr.html
