@@ -1,0 +1,436 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    
+    <meta property="og:title" content="Robert Vanden Eynde's CV" />
+    <meta property="og:description" content="Robert Vanden Eynde's CV" />
+    <meta property="og:image" content="http://robertvandeneynde.be/cv-blur.png" />
+  <style>
+    @font-face {
+        font-family: UbuntuPerso;
+        src: url('Ubuntu-R.ttf') format('truetype');
+    }
+    @font-face {
+        font-family: UbuntuPerso;
+        src: url('Ubuntu-RI.ttf') format('truetype');
+        font-style: italic; /* , oblique; */
+    }
+    @font-face {
+        font-family: UbuntuPerso;
+        src: url('Ubuntu-B.ttf') format('truetype');
+        font-weight: bold;
+    }
+    
+    @font-face {
+        font-family: UbuntuLightPerso;
+        src: url('Ubuntu-L.ttf') format('truetype');
+    }
+    @font-face {
+        font-family: UbuntuLightPerso;
+        src: url('Ubuntu-LI.ttf') format('truetype');
+        font-style: italic; /* , oblique; */
+    }
+    
+    a {
+        color: inherit;
+        text-decoration: underline;
+        /* font-style: italic; */
+    }
+    header p {
+        color: white;
+        padding-top: 0px;
+        padding-bottom: 0;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    body {
+        font-family: UbuntuPerso;
+        color: black;
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+    }
+    header {
+        font-size: 16px;
+    }
+    .loisirs p {
+        padding: 0;
+        margin: 10px;
+    }
+    .photo {
+        height: 200px;
+        /* border-radius: 50%;
+        border: 2px solid #666; */
+    }
+    /*
+    .column:last-child {
+        position: relative;
+        top: -150px;
+    }
+    */
+    .column:first-child h3 {
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+    .column:first-child p {
+        margin-top: 5px;
+    }
+    .column p {
+        color: #666;
+    }
+    @media print {
+        .photo {
+            height: 50mm;
+        }
+        header {
+            font-size: 12pt;
+        }
+        body {
+            font-size: 22pt;
+            -webkit-print-color-adjust: exact;
+        }
+        .realbody {
+            font-size: 10pt;
+        }
+        .realbody .column:last-child {
+            font-size: 10pt; 
+        }
+        .loisirs {
+            margin-top: 2mm;
+        }
+        /*
+        .loisirs p {
+            margin: 0mm;
+            display: inline-block;
+            border-left: 1px solid #ccc;
+        }
+        .loisirs p:last-child {
+            border-right: 1px solid #ccc;
+        }
+        */
+    }
+    .realbody .column:last-child h3 {
+        padding: 0;
+        margin: 0;
+        margin-top: 2mm;
+    }
+    .realbody .column:last-child p {
+        padding: 0;
+        margin: 0;
+        margin-top: 1mm;
+        margin-bottom: 1mm;
+    }
+    .realbody {
+        margin-top: 5px;
+    }
+    .date {
+        margin-right: 5px;
+        color: #339;
+    }
+    .data {
+        /* white-space: nowrap; */
+    }
+    idiv {
+        display: inline-block;
+    }
+    h2 {
+        font-weight: normal;
+        background: #09b3f5;
+        color: white;
+        padding: 5px;
+        margin: 10px 0 0 0;
+        font-size: 1.5em;
+    }
+    h3 {
+        font-weight: normal; 
+        border-bottom: 1px solid #09b3f5; 
+        font-size: 1.2em;
+    }
+    .formation h3 {
+    
+    }
+    .column {
+        vertical-align: top; 
+    }
+    header {
+        border: 1px solid; 
+        background: #09b3f5; 
+        color:  white; 
+        padding: 10px 0 0 10px; 
+    }
+    .thename {
+        font-size: 36px; 
+        /* padding: 10px; */
+        font-family: UbuntuLightPerso;
+        /* letter-spacing: -3px; */
+    }
+    @media print {
+        .thename {
+            font-size: 26pt;
+        }
+    }
+    /*
+    .punchline {
+        font-style: italic; 
+        margin: 15px 0; 
+    }
+    */
+    .desc {
+        margin-bottom: 10px;
+    }
+    idiv {
+        vertical-align: top; 
+    }
+    .realbody {
+        
+    }
+    .column:first-child {
+        width: 65%; 
+        margin-left: 5px; 
+        margin-right: 2px; 
+    }
+    .column:last-child {
+        width: 33%;
+        margin-left: 2px; 
+        margin-right: 5px; 
+    }
+    @media print {
+        .column:first-child {
+            width: 60%;
+            margin-left: 5mm;
+            margin-right: 2mm;
+        }
+        .column:last-child {
+            width: 28%;
+            margin-left: 2mm;
+            margin-right: 5mm;
+        }
+    }
+    
+    header .left {
+        width: 80%;
+        max-width: 600px;
+    }
+    
+    @media print {
+        header .left {
+            width: 60%;
+        }
+    }
+    .themail::after {
+        content: "@hotmail.com";
+    }
+    .thegmail::after {
+        content: "@gmail.com";
+    }
+    .frequency {
+        margin-right: 1em;
+        font-variant: italic;
+        font-size: 80%;
+    }
+    .has-title, [title] {
+        text-decoration: underline;
+    }
+    .has-title::after {
+        content: "*";
+    }
+    /* p + .hr {
+        margin-bottom: 5px;
+    } */
+    .hr + h3, .column:first-child .hr + h3 {
+        margin-top: 5px;
+    }
+  </style>
+
+</head>
+<body>
+
+    <header>
+        <idiv class="left">
+            <p class="thename">Ir. Robert Vanden Eynde</p>
+            <p>33  years old  &ndash; <em> Passionate and enthusiastic pedagogue </em></p>
+            <p class="desc"> Computer Science Engineer </p>
+            <!-- <p class="punchline"></p> -->
+        </idiv>
+        <idiv class="right">
+            <p>+32 474 78 15 97 | <span class="thegmail">robertve92</span></p>
+            <p><span class="themail">robertvandeneynde</span></p>
+            <p><a href="https://robertvandeneynde.be">robertvandeneynde.be</a></p>
+            <p>
+                <a href="cv.fr.html">Français</a> &ndash;
+                <a href="cv.ru.html">Русский</a> &ndash;
+                <a href="cv-robert-vanden-eynde-en.pdf">#pdf</a>
+            </p>
+        </idiv>
+    </header>
+    
+    <div class="realbody">
+    
+    <idiv class="column">
+
+        <h2> Experience </h2>
+        
+        
+        <h3><span class="date" title="|2024 - 2026" style="has-title">2024 – 2026</span> <span class="data"> Volunteer activities work in Moscow </span></h3>
+        <p>
+        
+            In Moscow, I worked on my telegram bot that manages events for some communities (<a href="https://t.me/rvesleep_bot">t.me/rvesleep_bot</a>), created a french conversation and board games club, developed my network to give programming lessons for teens, have been attending music jams, and have been giving private french lessons.
+            
+        </p>
+        
+        <div class="hr" style="height: 12px; border-bottom: 1px solid #009; text-align: center; font-size: 12px; top: -2px; position: relative">2024 - 2025 &ndash;  Relocation to Russia </div>
+        
+        <h3><span class="date" title="|2022 - 2024" style="has-title">2022 – 2024</span> <span class="data"> Software developer at AFMPS </span></h3>
+        <p>
+        
+            <em class="frequency">Full time</em>
+             Java Spring, Spring boot for AFMPS via Smals
+        &mdash; <a href="http://smals.be">smals.be</a> | <a href="http://fagg-afmps.be">fagg-afmps.be</a>
+        </p>
+        
+        <div class="hr" style="height: 12px; border-bottom: 1px solid #009; text-align: center; font-size: 12px; top: -2px; position: relative">2022 &ndash;  Trip to Europe </div>
+        
+        <h3><span class="date" title="|2018 - 2020 (Polytech) |2018 - 2022 (SciencesÉco)" style="has-title">2018 – 2022</span> <span class="data"> External teaching assistant in Polytechnique and Sciences Écononomiques (ULB, Brussels) </span></h3>
+        <p>
+        
+            <em class="frequency">4h/week during one quadrimester</em>
+            C++ programming class INFOH304 in 3rd year of <em>Polytechnique, section informatique et biomédical</em>. Python/Django programming class INFOS302 in 3rd year of <em>Sciences Écononomiques, tronc commun</em>
+             &mdash; <a href="http://ulb.ac.be">ulb.ac.be</a>
+        </p>
+        
+        <div class="hr" style="height: 12px; border-bottom: 1px solid #009; text-align: center; font-size: 12px; top: -2px; position: relative">2021 &ndash;  Trip to France and Russia </div>
+        
+        <h3><span class="date" title="">2020 - 2020</span> <span class="data"> Software Developer (Odoo, Belgique) </span></h3>
+        
+        <p>
+            &mdash; <a href="https://odoo.com">odoo.com</a>
+        </p>
+
+        <h3><span class="date" title="2018 September - 2020 August">2018 – 2020</span> <span class="data"> Computer science teacher at <em>Institut de l'Assomption</em> (Brussels) </span></h3>
+        <p>
+        
+            <em class="frequency">13h/week, 6 classes having 1h/week</em>
+            Initiation to programming (python) for students of secondary school (13 to 16 years old) creating video games (pygame),
+            and websites programming (html/css)
+             &mdash; <a href="http://robertvandeneynde.be/parascolaire">robertvandeneynde.be/parascolaire</a>
+        </p>
+        
+        <h3><span class="date">2015 – 2020</span> <span class="data"> Teacher of extra-curricular courses at Lycée Emile Jacqmain (Brussels) </span></h3>
+        <p>
+        
+            <em class="frequency">2 groups having each 1h/week</em>
+            Initiation to programming for students of secondary school (14 to 16 years old) creating video games. This course was started on my own initiative 
+             &mdash; <a href="http://robertvandeneynde.be/parascolaire">robertvandeneynde.be/parascolaire</a>
+        </p>
+        
+        <h3><span class="date">2017 – 2018</span> <span class="data"> Physics teaching assistant at ULB (Brussels) </span></h3>
+        <p>
+        
+            <em class="frequency">Full time</em>
+            Teaching assistant for Physics class PHYSS1001 at the Solvay Business School &ndash; ULB
+             &mdash; <a href="https://ulb.ac.be">ulb.ac.be</a>
+        </p>
+        
+        <div class="hr" style="height: 12px; border-bottom: 1px solid #009; text-align: center; font-size: 12px; top: -2px; position: relative">2017 &ndash;  End of my studies, trip 5 months in Australia </div>
+
+        <h3><span class="date">2015 – 2017</span> <span class="data"> Technical leader for web platform Benjago </span></h3>
+        <p>
+        
+            <em class="frequency">1h/week during 3 years</em>
+            Development for web platform Benjago. Leader for technical choices, back-end development, team coordination
+            between founder, designer and front-end developer
+             &mdash; <a href="https://benjago.be" style="text-decoration:line-through">benjago.be</a>
+        </p>
+        
+        <!--<h3><span class="date">2013 – 2015</span> <span class="data"> Student Assistant at École Polytechnique and Solvay Business School (ULB) </span></h3>
+        -->
+        <!-- <p>
+            <em class="frequency">3h/week</em>
+            Guidance seminars in computer science for bachelor students.
+        </p> -->
+
+        <!--<h3><span class="date">2010 – 2017</span> <span class="data"> Private tuition in computer science, physics and mathematics </span></h3>
+        -->
+        <!-- <h3><span class="date">2015</span> <span class="data">
+            Web development for M4ke.it and development of a prototype for Pickeat project
+        </span></h3> -->
+            
+        <!-- <p>
+            <em class="frequency">40h for M4ke.it and 20h for Pickeat</em> 
+             Python and AngularJS development for M4ke.it and web development for Pickeat.  -->
+            
+            <!-- an application for a future restaurant chain. The prototype is accessible if you ask 
+             &mdash; <a href="http://m4ke.it">www.m4ke.it</a>-->
+        <!-- </p> -->
+
+        <!-- <h3><span class="date">2012 – 2013</span> <span class="data"> Finalist in television show Starter RTBF, three times finalist at some computer science contests </span></h3>
+        -->
+        <!-- <p> -->
+        <!--
+            Starter is a television show that encourages young entrepreneurs to create their startup.
+        -->
+        <!-- </p> -->
+
+        <!--
+        <h3><span class="date">2012 – 2013</span> <span class="data"> Three times finalist at some computer science contests </span></h3>
+        <p>
+             Twice finalist in the French Computer Science Competition Prologin (Paris) and one time finalist at <em>Olympiades belges d'informatique</em> 
+            &mdash; <a href="http://prologin.org">prologin.org</a>
+            &mdash; <a href="http://be-oi.be">be-oi.be</a>
+        </p>
+        -->
+    </idiv>
+    
+    <idiv class="column">
+        <div style="text-align: center">
+            <img class="photo" src="robert.png" />
+        </div>
+        <h2> Portfolio </h2>
+        <div>
+            <p><a href="https://robertvandeneynde.be/parascolaire">robertvandeneynde.be/parascolaire</a></p>
+            <p><a href="https://github.com/robertvandeneynde">github.com/robertvandeneynde</a></p>
+        </div>
+        
+        <h2> Programming skills </h2>
+        <div>
+            <h3>Desktop</h3>
+            <p>Python / Telegram bot / C++ / Java / OpenGL / Qt</p>
+            <h3>Web</h3>
+            <p>HTML5 / CSS3 / JS / jQuery / AngularJS / Django / Linux Server / nginx / SQL </p>
+            <!-- <h3>Mobile</h3>
+            <p>Java, Phonegap</p> -->
+        </div>
+        
+        <h2> Formation </h2>
+
+        <div class="formation">
+            <h3>2017 &ndash; 2018</h3>
+            <p>~15/30 ECTS  in AESS  (Secondary school teaching certification) (not finished)</p>
+            <h3>2014 – 2017</h3>
+            <p> Master in Computer Science and Engineering in Polytechnique (Université Libre de Bruxelles) </p>
+            <h3>2010 – 2014</h3>
+            <p> Bachelor in Engineering, Computer Science section. </p>
+            <!-- <h3>2004 – 2010</h3>
+            <p> CESS at Lycée Emile Jacqmain (Scientifique A Section). </p> -->
+        </div>
+
+        <h2> Hobby's </h2>
+        
+        <div class="loisirs">
+            <p> Karaoke / Cirque / Board games / Rubik's Cubing / Dance / Basket / Snowboard
+            </p>
+        </div>
+        
+        <h2> Languages </h2>
+            
+        <p>
+             French (Native)  <br>
+             English (Fluent)  <br>
+             Dutch (Intermediate)  <br>
+             Russian (Intermediate) 
+        </p>
+
+    </idiv>
+</body>
+</html>

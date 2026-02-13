@@ -1,0 +1,2 @@
+cd /home/robert/cv
+rsync * robert@robertvandeneynde.be:siteperso/cv/

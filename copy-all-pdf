@@ -1,0 +1,12 @@
+#!/bin/bash
+cp cv.en.html.pdf cv-en.pdf
+cp cv.fr.html.pdf cv-fr.pdf
+cp cv.ru.html.pdf cv-ru.pdf
+
+cp cv.en.html.pdf cv.en.pdf
+cp cv.fr.html.pdf cv.fr.pdf
+cp cv.ru.html.pdf cv.ru.pdf
+
+cp cv.en.pdf cv-robert-vanden-eynde-en.pdf
+cp cv.fr.pdf cv-robert-vanden-eynde-fr.pdf
+cp cv.ru.pdf cv-robert-vanden-eynde-ru.pdf
